@@ -60,7 +60,7 @@ You can now access the server at http://localhost:8000
 - `database/factories` - Contains the model factory for all the models
 - `database/migrations` - Contains all the database migrations
 - `database/seeds` - Contains the database seeder
-- `routes` - Contains all the api routes defined in api.php file
+- `routes` - Contains all the api routes defined in web.php file
 - `tests` - Contains all the application tests
 
 ## Environment variables

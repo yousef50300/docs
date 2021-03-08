@@ -12,14 +12,20 @@ Install all the dependencies using composer
 
     composer install
 
-Generate a new JWT authentication secret key
+Generate a new JWT authentication secret key (**This will update your .env file with something like JWT_SECRET=foobar**)
 
-    php artisan jwt:secret  (**This will update your .env file with something like JWT_SECRET=foobar**)
+    php artisan jwt:secret
 
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
 
+Run the documentation generate
+
+    php artisan swagger-lume:generate
+    
+You can now access the docs at http://localhost:8000/api/documentation
+    
 Start the local development server
 
     php localhost:8000 -t public/
@@ -28,12 +34,10 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
-    cd laravel-realworld-example-app
     composer install
-    cp .env.example .env
-    php artisan key:generate
-    php artisan jwt:generate 
+    php artisan jwt:secret
+    php artisan migrate
+    php artisan swagger-lume:generate
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
 

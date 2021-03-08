@@ -1,4 +1,4 @@
-# ![Cgfort Auth Service]
+# [Cgfort Auth Service]
 
 ----------
 

@@ -28,7 +28,7 @@ You can now access the docs at http://localhost:8000/api/documentation
     
 Start the local development server
 
-    php localhost:8000 -t public/
+    php -S localhost:8000 -t public/
 
 You can now access the server at http://localhost:8000
 
@@ -73,6 +73,10 @@ You can now access the server at http://localhost:8000
 
 # Testing API
 
+Run phpunit test
+
+    vendor/bin/phpunit
+    
 Run the laravel development server
 
     php localhost:8000 -t public/

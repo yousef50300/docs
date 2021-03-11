@@ -20,17 +20,13 @@ Run the documentation generate
 
     php artisan swagger-lume:generate
 
-* **Sample Call:**
+Run the documentation generate
 
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
+  ```php
+    'users' => [
+        'base_uri' => 'localhost:8001',
+        'secret' => '',
+    ]
   ```
   
 You can now access the docs at http://localhost:8000/api/documentation

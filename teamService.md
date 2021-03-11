@@ -1,4 +1,4 @@
-# Cgfort Auth Service
+# Cgfort Team Service
 
 # Getting started
 
@@ -12,9 +12,6 @@ Install all the dependencies using composer
 
     composer install
 
-Generate a new JWT authentication secret key (**This will update your .env file with something like JWT_SECRET=foobar**)
-
-    php artisan jwt:secret
 
 Run the database migrations (**Set the database connection in .env before migrating**)
 
@@ -35,7 +32,6 @@ You can now access the server at http://localhost:8000
 **TL;DR command list**
 
     composer install
-    php artisan jwt:secret
     php artisan migrate
     php artisan swagger-lume:generate
     
@@ -47,8 +43,6 @@ You can now access the server at http://localhost:8000
 
 ## Dependencies
 
-- [jwt-auth](https://github.com/tymondesigns/jwt-auth) - For authentication using JSON Web Tokens
-- [laravel/socialite](https://laravel.com/docs/8.x/socialite) - For authentication using social
 - [darkaonline/swagger-lume](https://github.com/DarkaOnLine/SwaggerLume) - For generate docs for api
 
 ## Folders
@@ -86,15 +80,5 @@ Request headers
 | **Required** 	| **Key**              	| **Value**        
 |----------	|------------------	|------------------	|
 | Optional  | Content-Type     	| application/json 	|
-| Optional 	| Authorization    	| Token {JWT}      	|
-
-----------
- 
-# Authentication
- 
-This applications uses JSON Web Token (JWT) to handle authentication. The token is passed with each request using the `Authorization` header with `Token` scheme. The JWT authentication middleware handles the validation and authentication of the token. Please check the following sources to learn more about JWT.
- 
-- https://jwt.io/introduction/
-- https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html
 
 ----------

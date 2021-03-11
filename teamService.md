@@ -12,7 +12,6 @@ Install all the dependencies using composer
 
     composer install
 
-
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
@@ -20,7 +19,20 @@ Run the database migrations (**Set the database connection in .env before migrat
 Run the documentation generate
 
     php artisan swagger-lume:generate
-    
+
+* **Sample Call:**
+
+  ```javascript
+    $.ajax({
+      url: "/users/1",
+      dataType: "json",
+      type : "GET",
+      success : function(r) {
+        console.log(r);
+      }
+    });
+  ```
+  
 You can now access the docs at http://localhost:8000/api/documentation
     
 Start the local development server

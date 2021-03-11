@@ -20,7 +20,7 @@ Run the documentation generate
 
     php artisan swagger-lume:generate
 
-Run the documentation generate
+Set auth service base url in `config/services.php`
 
   ```php
     'users' => [

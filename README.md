@@ -79,7 +79,7 @@ Run phpunit test
     
 Run the laravel development server
 
-    php localhost:8000 -t public/
+    php -S localhost:8000 -t public/
 
 The api can now be accessed at
 

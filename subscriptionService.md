@@ -36,6 +36,7 @@ You can now access the server at http://localhost:8000
 
     composer install
     php artisan migrate
+    php artisan db:seed
     php artisan swagger-lume:generate
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)

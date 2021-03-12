@@ -25,7 +25,23 @@ Run the documentation generate
     php artisan swagger-lume:generate
     
 You can now access the docs at http://localhost:8000/api/documentation
-    
+
+Update social app config in  `config/services.php`
+
+  ```php
+    'facebook' => [
+        'client_id' => '904926666686550',
+        'client_secret' => 'f991c22e9ac0fb10f3fcc78462f75f67',
+        'redirect' => ""
+    ],
+
+    'google' => [
+        'client_id' => '398504279434-eeh8h7u5uetssci8i8sek8o5iirv0sg0.apps.googleusercontent.com',
+        'client_secret' => 'oFVBRMRcUgPJA2RAZcGqzUdM',
+        'redirect' => '',
+    ],
+  ```
+  
 Start the local development server
 
     php -S localhost:8000 -t public/

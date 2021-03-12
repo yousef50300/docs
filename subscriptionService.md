@@ -1,4 +1,4 @@
-# Cgfort Team Service
+# Cgfort Subscription Service
 
 # Getting started
 
